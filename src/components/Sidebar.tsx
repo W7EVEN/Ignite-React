@@ -17,7 +17,7 @@ export const Sidebar = () => {
       <span className="list__header">Cronograma de aulas</span>
 
       <div className="list__lessons">
-        {data?.lessons.map((lesson: LessonProps) => {
+        {data?.lessons.map((lesson: any) => {
           return (
             <Lesson
               key={lesson.id}
