@@ -7,7 +7,7 @@ export const Event = () => {
   const { slug } = useParams<{ slug: string }>();
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="container__main">
       <Header />
       <main className="container__lessons">
         {slug ? (

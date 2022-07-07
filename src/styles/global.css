@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+.container__main {
   @apply flex flex-col min-h-screen;
 }
 
@@ -14,7 +14,7 @@
   @apply flex flex-1;
 }
 
-.container__video {
+.container__lesson {
   @apply flex-1;
 }
 
@@ -72,6 +72,130 @@
 
 .card__title--active {
   @apply text-white;
+}
+
+.lesson__content {
+  @apply bg-black flex justify-center;
+}
+
+.lesson__video {
+  @apply h-full w-full max-w-[1100px] max-h-[60vh] aspect-video;
+}
+
+.lesson__info {
+  @apply p-8 max-w-[1100px]  mx-auto;
+}
+
+.lesson__details {
+  @apply flex items-start gap-16;
+}
+
+.lesson__description {
+  @apply flex-1;
+}
+
+.description__title {
+  @apply text-2xl font-bold;
+}
+
+.description__info {
+  @apply mt-4 text-gray-200 leading-relaxed;
+}
+
+.description__teacher {
+  @apply flex items-center gap-4 mt-6;
+}
+
+.teacher__info {
+  @apply leading-relaxed;
+}
+
+.teacher__name {
+  @apply font-bold text-2xl block;
+}
+
+.teacher__description {
+  @apply text-gray-200 text-sm block;
+}
+
+.teacher__picture {
+  @apply h-16 w-16 rounded-full border-2 border-blue-500;
+}
+
+.lesson__extra-materials {
+  @apply gap-8 mt-20 grid grid-cols-2;
+}
+
+.details__buttons {
+  @apply flex flex-col gap-4;
+}
+
+.buttons__discord {
+  @apply p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center transition-colors hover:bg-green-700;
+}
+
+.buttons__challenge {
+  @apply p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center transition-colors hover:bg-blue-500 hover:text-gray-900;
+}
+
+.extra-materials__card {
+  @apply bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 transition-colors hover:bg-gray-600;
+}
+
+.card__icon {
+  @apply bg-green-500 h-full p-6 flex items-center transition-colors group-hover:bg-green-300;
+}
+
+.card__text {
+  @apply py-6 leading-relaxed;
+}
+
+.card__description {
+  @apply text-sm text-gray-200 mt-2;
+}
+
+.card__heading {
+  @apply text-2xl;
+}
+
+.card__arrow-icon {
+  @apply h-full p-6 flex items-center;
+}
+
+.container__subscribe {
+  @apply min-h-screen bg-background bg-top bg-cover bg-no-repeat flex flex-col items-center;
+}
+
+.subscribe__content {
+  @apply w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto mb-10;
+}
+
+.subscribe__copy {
+  @apply max-w-[640px];
+}
+
+.subscribe__title {
+  @apply mt-8 text-[2.5rem] leading-tight;
+}
+
+.subscribe__description {
+  @apply mt-4 text-gray-200 leading-relaxed;
+}
+
+.subscribe__form-content {
+  @apply p-8 bg-gray-700 border border-gray-500 rounded;
+}
+
+.form-content__title {
+  @apply text-2xl mb-6 block;
+}
+
+.form-content__input {
+  @apply bg-gray-900 rounded px-5 h-14 transition-all focus:outline-green-500 caret-green-500;
+}
+
+.form-content__submit {
+  @apply mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm transition-colors hover:bg-green-700 disabled:opacity-50;
 }
 
 body {
